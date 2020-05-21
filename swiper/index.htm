@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="gb2312">
+<meta charset="utf-8">
 <meta name="robots" content="all" />
 <meta name="author" content="Tencent-TGideas" />
 <meta name="Copyright" content="Tencent" />
@@ -9,11 +9,10 @@
 <meta name="mobile-agent" content="format=html5;url=/m/">
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
-<title>-腾讯第一国战手游-腾讯游戏</title>
+<title>swiper组件</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <!-- 页面设计： | 页面制作：文子 | 创建： | 团队博客：tgideas.qq.com/ -->
 <link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/index.css">
 <style>
 body,h1,h2,h3,h4,h5,h6,p,label,input,ul,li{margin:0;padding:0}
 body{font-family:Helvetica;color:#695433;text-align:left}
@@ -26,6 +25,8 @@ ul,li{list-style-type:none}
 .cfix{*zoom:1}
 .cfix:after{display:table;content:"";clear:both}
 
+.swiper-container {width:100%;height:100%}
+.swiper-wrapper{position:relative;width:100%;height:100%;margin:0 auto}
 .page1{background-color: thistle}
 .page2{background-color:wheat}
 .page3{background-color:teal}
@@ -51,14 +52,6 @@ html.style.fontSize=100*(cliWidth/750)+"px";
 win.addEventListener("resize",setFont,false);
 setFont();
 })(window,document);
-//此段代码不能放到外链JS中，
-var setSite={ //设置网站属性 
-siteType:"a20160711xxx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
-pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
-pageName:"首页", //必填项:页面中文名 
-project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
-osact:0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
-}
 </script>
 </head>
 <body>
@@ -78,22 +71,13 @@ osact:0 //选填项:是否是官网专题(在官网运营的专题)boolean；默
     </div>
 </div>
 <script src="js/swiper.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+
 <script>
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical'
 });
 console.log('%c swiper组件：https://www.swiper.com.cn/','color:#fff;background-color:#426891;font-size:24px');
 
-TGMobileShare({
-shareTitle:"御龙在天手游官方网站", //不设置或设置为空时，页面有title，则调取title
-shareDesc:"腾讯第一国战手游", //不设置或设置为空时，页面有Description，则调取Description
-shareImgUrl:location.protocol+"//game.gtimg.cn/images/ylzt/m/m201609/logo.png", //分享图片尺寸200*200，且填写绝对路径
-shareLink:location.protocol+"//ylzt.qq.com/m/", //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
-actName:"m201605" //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
-});
-if(typeof(pgvMain) == "function") pgvMain();
 </script>
 </body>
 </html>

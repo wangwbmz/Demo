@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="gb2312">
+<meta charset="utf-8">
 <meta name="robots" content="all" />
 <meta name="author" content="Tencent-TGideas" />
 <meta name="Copyright" content="Tencent" />
 <meta name="applicable-device" content="pc">
 <meta name="mobile-agent" content="format=html5;url=/m/">
-<meta name="Keywords" content="½£ÏÀÇéÔµ2ÈËÀ­ÈË»î¶¯,½£¸èĞĞ,½£ÏÀÇéÔµ2ÊÖÓÎ,¹ú·ç,ÎäÏÀ,ÊÖÓÎ,½£ÏÀÇéÔµ2¹ÙÍø,½£ÏÀÇéÔµ2Ô¤Ô¼,¸£Àû,ÌÚÑ¶ÓÎÏ·,Î÷É½¾Ó,ÁõÏ£">
-<meta name="Description" content="ÓÉÎ÷É½¾Ó´òÔì£¬ÌÚÑ¶¶À¼Ò´úÀíµÄ¡¶½£ÏÀÇéÔµ2£º½£¸èĞĞ¡·ÎäÏÀÊÖÓÎ¹Ù·½ÍøÕ¾¡£öÁÃÀ¹ú·ç£¬¾ªºè³õÏÖ¡£Î¨ÃÀ3D¹ú·ç´óÊÀ½ç£¬ĞÂÓÎÔ¤Ô¼»ğÈÈ½øĞĞÖĞ£¬¸øÄãÒ»¸ö²»Ò»ÑùµÄ½­ºşÌåÑé¡£">
-<title>ÊÖÊÆ</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>æ‰‹åŠ¿</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<!-- Ò³ÃæÉè¼Æ£º | Ò³ÃæÖÆ×÷£º | ´´½¨£º2020-05-11  -->
+<!-- é¡µé¢è®¾è®¡ï¼š | é¡µé¢åˆ¶ä½œï¼š | åˆ›å»ºï¼š2020-05-11  -->
 <script>
 if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     //window.location.href = "/cp/a20200422lhjxpc/index.htm"+ location.search;
@@ -37,7 +37,7 @@ setFont();
 <div id="touch_test" style="font-size: 36px; width: 200px; height: 200px; background: #cce">
     touch events test
 </div>
-<div class="dom">Dom²âÊÔ</div>
+<div class="dom">Domæµ‹è¯•</div>
 <script src="zepto1.2_touch.js"></script>
 <script>
 $(document).ready(function(){
@@ -45,31 +45,31 @@ $(document).ready(function(){
     listen_to('#touch_test')    
     function listen_to(el) {
       $(el).tap(function(){
-        console.log(' | tap!') //tap´¥ÃşÊÖ»úÆÁÄ»Ê±´¥·¢
+        console.log(' | tap!') //tapè§¦æ‘¸æ‰‹æœºå±å¹•æ—¶è§¦å‘
       })
       .doubleTap(function(){
-        console.log(' | double tap!') //Á¬Ğø´¥ÃşÁ½´ÎÊÇ´¥·¢
+        console.log(' | double tap!') //è¿ç»­è§¦æ‘¸ä¸¤æ¬¡æ˜¯è§¦å‘
       })
       .swipe(function(){
-        console.log(' | swipe!')  //»¬¶¯ÊÖ»úÆÁÄ»Ê±´¥·¢
+        console.log(' | swipe!')  //æ»‘åŠ¨æ‰‹æœºå±å¹•æ—¶è§¦å‘
       })
       .swipeLeft(function(){
-        console.log(' | swipe left!') // Ïò×ó»¬¶¯Ê±´¥·¢
+        console.log(' | swipe left!') // å‘å·¦æ»‘åŠ¨æ—¶è§¦å‘
       })
       .swipeRight(function(){
-        console.log(' | swipe right!') // ÏòÓÒ»¬¶¯Ê±´¥·¢
+        console.log(' | swipe right!') // å‘å³æ»‘åŠ¨æ—¶è§¦å‘
       })
       .swipeUp(function(){
-        console.log(' | swipe up!') // ÏòÉÏ»¬¶¯Ê±´¥·¢
+        console.log(' | swipe up!') // å‘ä¸Šæ»‘åŠ¨æ—¶è§¦å‘
       })
       .swipeDown(function(){
-        console.log(' | swipe down!') // ÏòÏÂ»¬¶¯Ê±´¥·¢
+        console.log(' | swipe down!') // å‘ä¸‹æ»‘åŠ¨æ—¶è§¦å‘
       })
       .longTap(function(){
-        console.log(' | long tap!')  //³¤°´Ê±´¥·¢
+        console.log(' | long tap!')  //é•¿æŒ‰æ—¶è§¦å‘
       })
       .singleTap(function(){
-        console.log(' | single tap!') // µ¥»÷Ê±´¥·¢
+        console.log(' | single tap!') // å•å‡»æ—¶è§¦å‘
       })
     }
   });
